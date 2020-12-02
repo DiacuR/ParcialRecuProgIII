@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "4aff2ac3-6f45-47ea-b3c5-c37472dae271",
+		"name": "RecuParcial2ProgIII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "punto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "juan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "juan@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}users",
+					"host": [
+						"{{url}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "luis@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}login",
+					"host": [
+						"{{url}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipoMascota",
+							"value": "huron",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}mascota",
+					"host": [
+						"{{url}}mascota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipoMascota",
+							"value": "huron",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2020/12/7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}turno",
+					"host": [
+						"{{url}}turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto 6",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{url}}turno/2",
+					"host": [
+						"{{url}}turno"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
