@@ -79,7 +79,7 @@ class TurnoController{
         }
 
         $response->getBody()->write(json_encode($rta));
-
+        return $response;
     }
 
 }
